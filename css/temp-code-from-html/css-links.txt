@@ -1,0 +1,55 @@
+
+
+---[css-links]---
+
+
+---[youtube]---
+
+// #1: //
+https://www.youtube.com/watch?v=ieTHC78giGQ&list=PL5Tw98-9k5Ib6EDFLx0RawXm_RlDyv3j4
+
+// #2: //
+https://scrimba.com/playlist/pPK9Cq
+
+// #3: //
+https://scrimba.com/playlist/pByETK
+
+// #4: //
+https://scrimba.com/playlist/pVaDAv
+
+
+
+// #5: css page.
+https://www.youtube.com/watch?v=0afZj1G0BIE
+
+
+
+
+---[sites]---
+#1:
+Additional CSS tutorials on freecodecamp.org not covered in this video:
+
+// #1: Applied Visual Design:
+https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design/
+
+// #2: Applied Accessibility:
+https://www.freecodecamp.org/learn/responsive-web-design/applied-accessibility/
+
+// #3: Responsive Web Design:
+https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-principles/
+
+
+// #   layout
+https://flutter.dev/docs/development/ui/layout
+
+
+
+
+---[youtube home sites]--
+
+https://www.youtube.com/user/jaketvee/videos
+
+
+
+
+    
