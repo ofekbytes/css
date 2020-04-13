@@ -1,5 +1,55 @@
 
+
 ---[links]---
 
 // temp - background //
 https://www.youtube.com/watch?v=muE2B0Zylbw
+
+
+
+---[CSS Reference]---
+
+https://www.w3schools.com/cssref/default.asp
+
+https://www.w3schools.com/cssref/css_selectors.asp
+
+https://www.w3schools.com/cssref/css_ref_aural.asp
+
+https://www.w3schools.com/cssref/css_websafe_fonts.asp
+
+https://www.w3schools.com/cssref/css_functions.asp
+
+https://www.w3schools.com/cssref/css_animatable.asp
+
+https://www.w3schools.com/cssref/css_units.asp
+
+https://www.w3schools.com/cssref/css_pxtoemconversion.asp
+
+https://www.w3schools.com/cssref/css_colors.asp
+
+https://www.w3schools.com/cssref/css_colors_legal.asp
+
+https://www.w3schools.com/cssref/css_default_values.asp
+
+
+// css_entities --> value to character
+https://www.w3schools.com/cssref/css_entities.asp
+
+
+
+---[CSS Properties]---
+
+https://www.w3schools.com/cssref/css3_pr_align-content.asp
+
+
+
+---[convert]---
+
+/// convert online ///
+https://khaledkzy.github.io/pixel-vh-vw-converter/
+
+
+/// linear-gradient ///
+https://www.w3schools.com/css/css3_gradients.asp
+
+

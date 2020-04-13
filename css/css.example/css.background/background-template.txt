@@ -1,0 +1,9 @@
+
+
+---[background template]---
+
+
+
+#1: <[ #e3fdfd, #cbf1f5, #a6e3e9, #71c9ce ]>
+
+#2: <[ #0779e4, #4cbbb9, #77d8d8, #eff3c6 ]>
