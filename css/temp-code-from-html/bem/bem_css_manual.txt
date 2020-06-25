@@ -1,0 +1,48 @@
+
+
+
+BEM (Block Element Modifiers) - 
+
+Block - a standalone entity what is meaningful on it own.
+Element - a part of a block that has no standalone meaning and is semantically tied to its block.
+Modifier - a flag on a block or element. use them to change appearance or behavior.
+
+
+- example:
+
+-- Block
+   class="card"
+
+-- Element
+   class="card__picture"
+   class="card__title"
+   class="card__description"
+   class="card__button"
+
+-- Modifier
+   class="card_button card__button--active"
+   
+
+BEM is a naming styling that is created by Yandex. 
+The problem BEM is trying to solve is the naming problem and structure that CSS often run into. 
+BEM also provides a better structure for your CSS code and scalable CSS. Basics. 
+
+
+- create a project with multiple pages, multiple rule, html selectors, can cause code organizing problem/s.
+
+
+cdealing with a project with:
+ multiple pages,
+multiple rule 
+html selectors.
+
+.ben__
+,ben--
+
+// rtf - links //
+
+https://en.bem.info/
+
+http://getbem.com/naming/
+
+

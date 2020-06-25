@@ -1,0 +1,27 @@
+body, html {
+    margin:0px;
+    height: 100vh;
+    background-color: yellow;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background: rgb(238,238,238);
+    font-family: 'Nunito', sans-serif;
+}
+
+.card {
+    padding: 0px 5em;
+    background:red;
+}
+
+
+.card__image {
+    display: block;
+    height: 100px;
+    width: 100%;
+    background: green;
+
+}
