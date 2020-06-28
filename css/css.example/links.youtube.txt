@@ -1,0 +1,11 @@
+
+---[youtube linkes]----
+
+/// Before and After pseudo elements explained - part one: how they work
+https://www.youtube.com/watch?v=zGiirUiWslI
+
+/// CSS Before and After pseudo elements explained - part two: the content property
+https://www.youtube.com/watch?v=xoRbkm8XgfQ&list=RDCMUCJZv4d5rbIKd4QHMPkcABCw&start_radio=1&t=3
+
+/// CSS Before and After pseudo elements explained - part three: as design elements
+https://www.youtube.com/watch?v=djbtPnNmc0I
