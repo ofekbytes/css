@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output</title>
+</head>
+<body>
+    <div>
+        <div>
+            <span>output tag is a container element that get data from a site / app / user action.</span>
+        </div>
+        <div>
+            <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                <label>Value one <input type="number" name="a" id="a" value="10" min="0" max="23"></label>
+                <br>
+                <label>Value two <input type="number" name="b" id="b" value="15" min="0" max="23"></label>
+                <br>
+                <label>Value one + value two = <output name="result" for="a b">25</output> </label>                
+              </form>
+      
+        </div>
+    </div>
+</body>
+</html>

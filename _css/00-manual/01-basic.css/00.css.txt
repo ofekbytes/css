@@ -1,0 +1,257 @@
+
+
+css - Cascading Style Sheets.
+
+00. css
+01. Inline CSS
+02. Embedded/Internal CSS
+03. External CSS
+04. CSS Syntax
+05. Type Selectors
+06. Cascade
+07. Inheritance
+08. css order and priority
+09. css Comments
+.
+.
+00. css
+.
+-- Cascading refers to the way CSS applies one style on top of another.
+--- Style Sheets control the look and feel of web documents.
+--- CSS apply specific styles to specific HTML elements.
+
+-!- file extension format type:
+    html - "*.html"
+    css - "*.css"
+    javaScript - "*.js"
+.
+.
+01. Inline CSS
+.
+
+--  Inline CSS: adding css style attribute to the relevant tag
+   
+--- example: <p> tag:
+
+    <p style="color:white; background-color:gray;">
+      This is an example of inline styling. 
+    </p>
+
+--- example: 
+    <01.inline.css.html>
+.
+.
+02. Embedded/Internal CSS:
+.
+
+-- Internal styles are defined within the <style> element, inside the head section of an HTML page.
+
+    <html>
+    <head>
+        <style>
+        /* css code */
+        p {
+            color:white;
+            background-color:gray;
+        }
+        </style>
+    </head>
+    <body>
+        /* html code */
+        <p>This is my first paragraph. </p>
+        <p>This is my second paragraph. </p>
+    </body>
+    </html>
+
+--- example: 
+    <02.internal.css.html>
+.
+.
+03. External CSS:
+.
+
+-- With this method, all styling rules are contained in a single text file,("***.css")
+    This CSS file is then referenced in the HTML using the <link> tag. (inside <head> section.
+    <head> 
+        <link rel="stylesheet" href="03.02.external.css">
+    </head>
+
+--- example: 
+    <03.01.external.css.html>
+    <03.02.external.css>
+.
+.
+04. CSS Syntax
+.
+
+--- CSS is composed of style rules for the document. 
+    (the grammar of the css Language).
+    A style rule has three parts: selector, property, and value. 
+
+    p { color : yellow ; }
+    selector { property : value ; }
+
+--- The declaration block { ... } contains one or more declarations, separated by semicolons <,>.
+    Each declaration includes a property name and a value, separated by a colon.
+
+--- example: 
+    <04.01.type.selectors.css.html>
+    <04.02.type.selectors.css>
+.
+.
+05. Type Selectors (html tag, id, class)
+.
+
+-- Type Selectors are selector targets element types on the page (html tags).
+
+--- example: 
+    <04.01.type.selectors.css.html>
+    <04.02.type.selectors.css>
+    
+
+---example:
+    p
+    {
+        background-color : white ;
+        color : blue ; 
+    }
+
+
+-- "id" Selectors
+--- select an element with a specific <id>, use a hash character <#> 
+    and can only be applied once per page.
+
+--- example: "id" Selectors
+    #idSelectors
+
+--- example: 
+    <04.01.type.selectors.css.html>
+    <04.02.type.selectors.css>
+
+--- example:
+
+    #id-selection
+    {
+        font-style: italic;
+        font-size: 33px;
+    }
+
+
+-- "class" Selectors
+--- select an element with a specific <class>, use a dot <.> character and 
+    can be used as many times on a page as needed.
+    
+--- example: "class" Selectors    
+    .classSelectors
+
+--- example: 
+    <04.01.type.selectors.css.html>
+    <04.02.type.selectors.css>
+
+--- example:
+
+    /* class */
+    .class-selection 
+    {
+        background-color: brown;
+        color: black;
+        font-size: 150%;
+    }
+
+-- Descendant Selectors (Inheritance)
+--- These selectors are used to select elements that are descendants of another element.
+    When selecting levels, you can select as many levels deep as you need to. 
+
+--- example:
+    <05.01.inner.css.path.css.html>
+    <05.02.inner.css.path.css>
+
+--- example:
+
+    div #name #firstName
+    {
+        color:blueviolet;
+        font-size: 25px;
+    }
+
+    #wrapper #name #firstName u 
+    {
+        color: red;
+        font-size:40px;
+    }
+.
+.
+06. Cascade
+.
+
+-- The three/3 main sources of style information that form a cascade are
+
+-1- The stylesheet created by the author of the page
+-2- The browser's default styles
+-3- Styles specified by the user
+
+--- CSS - Cascading Style Sheets.
+
+
+.
+.
+07. Inheritance
+.
+
+-- Inheritance refers to the way "properties" flow through the page. 
+    A "child" element will usually take on the characteristics of the "parent" element unless otherwise defined.
+
+--- example:
+
+    <html>
+    <head>
+        <style>
+        /* css code */
+        body {
+            color:white;
+            background-color:gray;
+        }
+        </style>
+    </head>
+    <body>
+        /* html code */
+        <p>This is my first paragraph. </p>
+        <p>This is my second paragraph. </p>
+    </body>
+    </html>
+
+--- example:
+    <07.01.Inheritance.css.html>
+    <07.02.Inheritance.css>
+
+--- Since the paragraph tag <p> (child element) is inside the body tag (parent element), 
+    it takes on any color assigned to the body tag.
+.
+.
+08. css order and priority
+.
+- css order and priority
+1. css body inline (inside tag/s) 
+2. css body style (<style> section)
+3. css external (external css file)
+
+--- example:
+    <08.01.order.and.priority.css.html>
+    <08.02.order.and.priority.css>
+.
+.
+09. css Comments
+.
+
+--- example: 
+    /* This a Comments */ 
+
+    /* 
+        line #1
+        line #2
+        ...
+    */
+
+--- example:
+    <09.01.comments.css.html>
+    <09.02.comments.css>

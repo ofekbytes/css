@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>001</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Obscure HTML elements</h1>
+        <p>Some HTML elements that not enough people are using.</p>
+      
+        <h2>The <code>mark</code> element</h2>
+        <blockquote>
+          Using <code>mark</code> in a <mark>blockquote can be used to highlight</mark> sections of the quote. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto fugit rem saepe quam doloribus sit obcaecati consequatur, impedit ea atque.
+        </blockquote>
+      
+        <h2>The <code>time</code> element</h2>
+        <p>The event will take place on <time datetime="2022-01-14">January 14th</time> and ipsum dolor, sit amet consectetur adipisicing elit. Vero, impedit.</p>
+      
+        <h2>The <code>output</code> element</h2>
+        <p>This is used for showing the output from various inputs.</p>
+        <p>The <code>for</code> attribute can list off the <code>id</code>s of all the inputs contributing to it</p>
+        <form action="">
+          <label>Value one <input type="number" id="val-one" value="10" min="0" max="33"></label>
+          <br>
+          <label>Value two <input type="number" id="val-two" value="15" min="0" max="33"></label>
+          <br>
+          <label>Value one + value two = <output for="val-one value-two"></output> </label>
+        </form>
+      
+        <h2>The <code>abbr</code> element</h2>
+        <p>You should use this anytime you have an abbreviation in your text, such as <abbr title="abbreviation">abbr</abbr>, appt, or even units, like <abbr title="millimeters">mm</abbr>, mph, or even things like <abbr title="HyperText Markup Language">HTML</abbr> and CSS!</p>
+      
+        <h2>The <code>dfn</code> element</h2>
+        <p>The <dfn>dfn element</dfn> is used to mark a term that is being defined within the current sentence.</p>
+        <p>If you repeat the term later on, you don't need to use dfn again, as you're only using the term, not defining what it is.</p>
+        <p><dfn><abbr title="Cascading Style Sheets">CSS</abbr></dfn> is a langauge is used to style the web.</p>
+      </div>
+
+      <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+//// TODO ////
+
+//// faster-html-css-coding ////
+https://medium.com/front-end-weekly/faster-html-css-coding-with-emmet-80a66db7ba66
+
+
+* create a folder to this subject.
+
+nav.primary-nav>ul.nav-list>li*4>lorem1
+
+    <nav class="primary-nav">
+        <ul class="nav-list">
+            <li>Lorem.</li>
+            <li>Adipisci.</li>
+            <li>Incidunt?</li>
+            <li>Tempore!</li>
+        </ul>
+    </nav>
+
+
+
+article>img+h3+h4
+
+<article>    
+   <img src="" alt="">
+   <h3></h3>
+   <h4></h4>
+</article>
+

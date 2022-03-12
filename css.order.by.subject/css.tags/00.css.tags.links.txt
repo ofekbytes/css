@@ -1,0 +1,19 @@
+
+
+----[links]------------
+
+
+//// mark ////
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark
+
+
+//// time datetime ////
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time?retiredLocale=he
+
+
+//// abbr (Abbreviation) ////
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr
+
+
+//// dfn ////
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn 
