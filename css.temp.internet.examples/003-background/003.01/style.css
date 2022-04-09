@@ -1,0 +1,97 @@
+/*
+ * 12 March 2022
+ * SCSS lerp-shading algorithm
+ * relevant code starts at Line 42
+ *
+ * This pen demonstrates a shading algorithm based on linear interpolation to colorize low poly CSS 3D creations. This is probably the simplest approach to control the shades of color of a 3D object made in CSS.
+ *
+ * I implemented a similar algorithm called "binary shading" for the CSS 3D Cake. It was supposed to increase the lightness value from 0 to 1 and then decrease it back to 0 around a cylinder. [0] --> [1] --> [0]
+ *
+ * On the other hand, lerp-shading can evenly spread all possible color variations from the color stops for any number of steps given. This approach supports the alpha channel too!
+ *
+ * The code could be further optimized. But it works pretty well, and I've other projects to complete. So, am done with it for now.
+ *
+ */
+ html,
+ body {
+   height: 100%;
+ }
+ 
+ body {
+   margin: 0;
+   display: flex;
+ }
+ 
+ div {
+   flex-grow: 1;
+ }
+ 
+ @media (max-width: 500px) {
+   body {
+     flex-direction: column;
+   }
+ }
+ body div:nth-child(1) {
+   --current: #8ecae6;
+ }
+ body div:nth-child(2) {
+   --current: #7cc3df;
+ }
+ body div:nth-child(3) {
+   --current: #6abbd8;
+ }
+ body div:nth-child(4) {
+   --current: #58b4d1;
+ }
+ body div:nth-child(5) {
+   --current: #45adca;
+ }
+ body div:nth-child(6) {
+   --current: #33a5c3;
+ }
+ body div:nth-child(7) {
+   --current: #219ebc;
+ }
+ body div:nth-child(8) {
+   --current: #46a29d;
+ }
+ body div:nth-child(9) {
+   --current: #6ba67e;
+ }
+ body div:nth-child(10) {
+   --current: #90ab60;
+ }
+ body div:nth-child(11) {
+   --current: #b5af41;
+ }
+ body div:nth-child(12) {
+   --current: #dab322;
+ }
+ body div:nth-child(13) {
+   --current: #ffb703;
+ }
+ body div:nth-child(14) {
+   --current: #feaf03;
+ }
+ body div:nth-child(15) {
+   --current: #fea602;
+ }
+ body div:nth-child(16) {
+   --current: #fd9e02;
+ }
+ body div:nth-child(17) {
+   --current: #fc9601;
+ }
+ body div:nth-child(18) {
+   --current: #fc8d01;
+ }
+ body div:nth-child(19) {
+   --current: #fb8500;
+ }
+ body {
+   --gradient: #8ecae6, #219ebc, #ffb703, #fb8500;
+ }
+ 
+ div {
+   background-color: var(--current);
+ }
