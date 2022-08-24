@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display grid</title>
+    <style>
+        .igrid {
+            display: grid;
+            grid-template-columns: 1fr, 500px, 1fr;
+            grid-template-rows: 100px, 200px 100px;
+            place-items: center;
+            border:1px red dashed;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="igrid">
+        <i>1</i>
+        <i>2</i>
+        <i>3</i>
+        <i>4</i>
+        <i>5</i>
+        <i>6</i>
+    </div>
+</body>
+</html>
