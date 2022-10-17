@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <!-- title -->
+    <title> css - Setting Styles to Links - without underline </title>
+
+    <style>
+        /* link default */
+        a {
+            border:none;   /* border */
+            outline:none;  /* remote dot on click/active */
+        }
+
+
+        a:link {
+            content:url("https://ofekbytes.github.io/assets/icons/jpg/40x40-pixels/squares-light-purple-40x40-pixels.jpg");            
+        }
+
+        /* visited */
+        a:visited {
+            content:url("https://ofekbytes.github.io/assets/icons/jpg/40x40-pixels/squares-light-purple-40x40-pixels.jpg");
+        }
+
+        /* over */
+        a:hover {
+            content:url("https://ofekbytes.github.io/assets/icons/jpg/40x40-pixels/squares-red-40x40-pixels.jpg");
+        }
+
+        /* clicked */
+        a:active {
+            content:url("https://ofekbytes.github.io/assets/icons/jpg/40x40-pixels/squares-yellow-40x40-pixels.jpg");
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div>Change squares picture file - yellow to red when mouse over square</div>
+    <p><a href="https://ofekbytes.github.io/assets/" target="_blank">
+            <!-- <img class="imgChange" src="https://ofekbytes.github.io/assets/icons/jpg/40x40-pixels/squares-light-purple-40x40-pixels.jpg"> -->
+            <img class="imgChange">
+        </a></p>
+</body>
+
+</html>
+
+
+

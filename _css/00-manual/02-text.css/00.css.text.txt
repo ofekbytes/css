@@ -1,0 +1,705 @@
+
+
+css - text.
+
+01 - The font-family Property
+02 - The font-size Property
+03 - The font-style Property
+04 - The font-weight Property
+05 - The font-variant Property
+06 - The color Property
+07 - The text-align Property
+08 - Aligning Text Vertically
+09 - The vertical-align Property
+10 - The text-decoration Property
+11 - The text-indent Property
+12 - text-shadow
+13 - The text-transform Property
+14 - The text-transform Property
+15 - The word-spacing Property
+16 - The white-space Property
+17 - css order and priority
+.
+.
+01 - The font-family Property
+.
+- The font-family property specifies the font for an element. 
+
+- There are two types of font family names: 
+-- font family: a specific font family 
+--- example: 
+    "Times New Roman" 
+    "Georgia"
+    "Arial"
+    "Verdana"
+    "Courier New"
+    "Lucida Console"
+
+--- example: a specific font family - Arial
+    body {
+        font-family: Arial;
+    }
+
+--- example: a specific font family
+    <01.01.font-family.specific.html>
+
+
+-- generic family: a group of font families with a similar look (like Serif or Monospace)
+--- example:
+    "Serif", "Sans-serif", Monospace
+
+--- example: a group of font families, Separate each font with a comma <,>
+    body 
+    {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+
+--- example: a group of font families
+    <01.02.font-family.group.html>
+
+
+-- font-family font list:
+--- serif 
+--- sans-serif
+--- monospace
+--- cursive
+--- fantasy
+
+
+-- web-safe fonts:
+--- Arial
+--- Arial Black
+--- Comic Sans MS
+--- Courier New
+--- Georgia
+--- Impact
+--- Times New Roman
+--- Trebuchet MS
+--- Verdana
+.
+.
+02 - The font-size Property
+.
+
+- The font-size property sets the size of a font - font keywords:
+-- xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger, etc. 
+
+--- example: familyfont font-size Property
+    <02.01.familyfont.font-size.html>
+
+
+-- The font-size Property - font size: pixels
+--- font size in pixel values
+
+--- example:
+    p {
+        font-size: 20px;
+    }
+
+
+-- The font-size Property - font size:  em
+--- em is a relative size unit.
+
+--- example:
+    p {
+        font-size: 1.25em; 
+    }
+
+
+-!- font size: pixels / em
+
+    20px = 1.25em.
+
+    pixels / 20 = em
+    20px / 16 = 1.25em.
+
+
+-- The font-size Property - font size: rem
+--- rem - (em font) stand alone font size without parent font intervention.
+    (parent -or- Block-Elementsbody, like:  p tag, form tag, etc... )
+
+--- example:
+
+    p {
+        font-size: 1.25rem; 
+    }
+
+
+-!- font size: pixels / rem :
+
+    20px = 1.25rem.
+
+    pixels / 20 = rem
+    20px / 16 = 1.25rem
+    90px / 16 = 5.625rem
+
+-- The font-size Property - font size: percentage < % >
+
+--- example: 
+    100%  = 16px (default)
+    90px / 16  = 5.625% = 562.5%
+
+---  example:
+
+    h1 {
+        font-size: 562.5%; 
+    }
+
+
+--- example: 20px, %, percentage, em, rem.
+    <02.02.familyfont.font-size.html>
+.
+.
+03 - The font-style Property
+.
+
+-- The font-style property is used to specify italic/normal/oblique text.
+
+--- example:
+
+    p.normal 
+    {
+        font-style: normal;
+    }
+
+    p.italic 
+    {
+        font-style: italic;
+    }
+
+    p.oblique 
+    {
+        font-style: oblique;
+    }
+
+--- example: font-style: normal, italic, oblique
+    <03.font-style.html>
+
+-!- The HTML <i> tag equals to (p.italic).
+.
+.
+04 - The font-weight Property
+.
+
+-- The font-weight controls the font weight (boldness or thickness) of the text. 
+   
+--- example: 
+
+    p.light 
+    {
+        font-weight: lighter;
+    }
+
+    p.bold 
+    {
+        font-weight: bold;
+    }
+
+    p.bolder 
+    {
+        font-weight: bolder;
+    }
+
+--- example: 
+    <04.01.font-weight.html>
+
+-- You can also define the font weight with a number 100 - 900 
+   100 (thin) 
+   400 (normal)
+   700 (bold)
+   900 (thick)
+
+--- example:
+    p.light 
+    {
+        font-weight: lighter;
+    }
+
+    p.thick 
+    {
+        font-weight: bold;
+    }
+
+    p.thicker 
+    {
+        font-weight: 700;
+    }
+
+--- example: 
+    <04.02.font-weight.html>
+.
+.
+05 - The font-variant Property
+.
+
+-- The CSS font-variant property allows you to convert your font to all small caps. 
+   The values can be set as normal, small-caps, inherit.
+
+--- example:
+
+    p.normal 
+    {
+    font-variant: normal;
+    }
+
+    p.small 
+    {
+    font-variant: small-caps;
+    }
+
+--- example:
+    <05.01.font-variant.html>
+
+-!- Not every font supports CSS font-variant, so be sure to test before you publish
+.
+.
+06 - The color Property
+.
+
+-- The CSS color property specifies the color of the text.
+
+--- example: css change font color.
+
+    p.example 
+    {
+    color: green;
+    }
+
+
+--- example: 
+    <06.01.color-Property.html>
+
+
+-- Another way of defining colors is using hexadecimal values and RGB. 
+   Hexadecimal form is a pound sign (#) followed by at most, 6 hex values (0-F).
+   RGB defines the individual values for Red, Green, and Blue.
+
+--- example: hexadecimal value to set the heading color to blue, 
+    and RGB form to make the paragraph red. 
+
+    h1 {
+        color: #0000FF;  /* blue */
+    }
+
+    p.example {
+        color: rgb(255, 0, 0);  /* red */
+    }
+
+--- example:
+    <06.02.color-Property.html>
+
+.
+.
+07 - The text-align Property
+.
+
+-- The text-align property specifies the horizontal alignment of text in an element.
+   The default text-align is left. 
+   text-align property values are as follows: left, right, center, justify. 
+
+--- example: 
+
+    p.left 
+    {
+        text-align: left;
+    }
+
+    p.right 
+    {
+        text-align: right;
+    }
+
+    p.center 
+    {
+        text-align: center;
+    }
+
+--- example:
+    <css-2.09.html>
+
+
+-!- When text-align is set to "justify", each line is stretched so that every line has equal width, 
+    and the left and right margins are straight (as in magazines and newspapers).
+.
+.
+08 - Aligning Text Vertically
+.
+
+-- The vertical-align property sets an element's vertical alignment. (top, middle, bottom).
+
+--- example: shows how to vertically align the text between the table. 
+
+    td.top 
+    {
+        vertical-align: top;
+    }
+
+    td.middle 
+    {
+        vertical-align: middle;
+    }
+
+    td.bottom 
+    {
+        vertical-align: bottom;
+    }
+
+--- example:
+    <css-10.html>
+
+.
+.
+09 - The vertical-align Property
+.
+
+-- The vertical-align property values: baseline, sub, super, % , px , pt, cm. 
+-- px (pixel), pt (points), cm (centimeters), % (percentage) values.
+
+--- example:
+
+    span.baseline 
+    {
+        vertical-align: baseline;
+    }
+
+    span.sub 
+    {
+        vertical-align: sub;
+    }
+
+    span.super 
+    {
+        vertical-align: super;
+    }
+
+    span.pixel 
+    {
+        vertical-align: -10px;
+    }
+
+--- example:
+    <css-11.html>
+
+-!- Vertical align property does not act the same way for all elements.
+
+--- example: div elements need some additional CSS styling. 
+    <css-12.html>
+
+-!- styling rules are applied to make the vertical-align property work with divs.
+    display: inline-table;  
+    display: table-cell; 
+    
+--- example:
+    <css-13.1.html>
+    <css-13.2.html>
+
+.
+.
+10 - The text-decoration Property
+.
+
+-- The text-decoration property specifies how the text will be decorated. 
+
+--- example: 
+none          -  The default value, this defines a normal text
+inherit       -  Inherits this property from its parent element
+overline      -  Draws a horizontal line above the text
+underline     -  Draws a horizontal line below the text
+line-through  -  draws a horizontal line through the text (substitutes the HTML <s> tag)
+
+-!- You can combine the underline, overline, or line-through values in a space-separated list to add multiple decoration lines.
+
+--- example:
+
+    p.none {
+    text-decoration: none;
+    }
+    p.inherit {
+    text-decoration: inherit;
+    }
+    p.overline {
+    text-decoration: overline;
+    }
+    p.underline {
+    text-decoration: underline;
+    }
+    p.line-through {
+    text-decoration: line-through;
+    }
+
+--- example: 
+    <css-2.14.1.html>
+    <css-2.14.2.html>
+
+
+-- blink text-decoration property makes the text blink.
+
+--- example:
+
+    text-decoration: blink; 
+
+--- example:  *****continue blink ****************************************************
+    <css-2.14.3.html> - blink 
+
+-!- This value is valid but is deprecated and most browsers ignore it.
+
+.
+.
+11 - The text-indent Property
+.
+
+-- The text-indent property specifies how much horizontal space should be left 
+   before the beginning of the first line (char/word) of the text. 
+   Property values are length (px, pt, cm, em, etc.), %, inherit. 
+
+-- Negative values are allowed. 
+   The first line will be indented to the left if the value is negative.
+
+--- example:
+
+    p 
+    {
+        text-indent: 40px;
+    }
+
+--- example:
+ - level 1.8 - css order and priority
+
+.- level 1.8 - css order and priority
+.- level 1.8 - css order and priority
+-- level 1.8 - css order and priority
+.- level 1.8 - css order and priority
+
+-- The text-shadow property adds shadow to text. 
+   It takes four values: 
+   the first value defines the distance of the shadow in the x (horizontal) direction, 
+   the second value sets the distance in the y (vertical) direction, 
+   the third value defines the blur of the shadow,
+   the fourth value sets the color. 
+
+-- The text-shadow property is : 
+   text-shadow: horizontal-position vertical-position blur color
+
+--- example:
+
+    h1 
+    {
+        text-shadow: 5px 2px 4px grey; /* x,y,radius,shadow */
+    }
+
+--- example:
+    <css-2.16.1.html>
+
+
+-!- To add more than one shadow to the text, add a comma-separated list of shadows.
+
+-- text-shadow with Blur Effect - 
+--- The text-shadow property "x" and "y" can use: px, cm, mm, in, pc, pt. 
+-!- Negative values are also supported.
+
+--- example:
+    h1 
+    {
+        font-size: 20pt;   
+        text-shadow: rgba(0,0,255,1) -1px -2px 0.5em; 
+    }
+
+
+--- example:
+    <css-2.16.2.html>
+
+.
+.
+13 - The text-transform Property
+.
+
+-- The text-transform CSS property specifies how to capitalize an element's text. 
+
+--- example: word capitalized
+
+    p.capitalize 
+    {
+        text-transform: capitalize;
+    }
+
+--- example:
+    <css-2.17.1.html>
+
+
+-- The text-transform CSS property specifies how to uppercase -or- lowercase an element's text. 
+
+--- example: 
+    p.uppercase 
+    {
+        text-transform: uppercase;
+    }
+
+    p.lowercase 
+    {
+        text-transform: lowercase;
+    }
+
+
+-!- "none" will produce no capitalization effect at all.
+    p.none 
+    {
+        text-transform: none;
+    }
+
+ --- example:
+     <css-2.17.2.html>
+
+
+.
+.
+14 - The text-transform Property
+.
+
+-- The letter-spacing property specifies the space between characters in a text. 
+-- The values can be set as:
+--- normal  - defines the default style with no extra space between characters
+--- length  - defines an extra space between characters using measurement units: px, pt, cm, mm, etc.
+--- inherit - inherits the property from its parent element;
+
+--- example: 
+
+    p.normal 
+    { 
+        letter-spacing: normal; 
+    }
+
+    p.positive 
+    { 
+        letter-spacing: 4px; 
+    }
+
+
+ --- example:
+     <css-2.18.1.html>
+
+-!- Always test your result, to ensure the text is readable.
+
+
+--- example: positive -or- negative value
+
+    p.positive 
+    {
+        letter-spacing: 4px;
+    }
+
+    p.negative 
+    {
+        letter-spacing: -1.5px;
+    }
+
+--- example:
+    <css-2.18.2.html>
+
+.
+.
+15 - The word-spacing Property
+.
+
+-- The word-spacing property specifies the space between words in a text. 
+-- The values can be set as:
+--- normal  - defines the default style with no extra space between characters
+--- length  - defines an extra space between characters using measurement units: px, pt, cm, mm, etc.
+--- inherit - inherits the property from its parent element;
+
+--- example: 
+
+    p.normal 
+    { 
+        word-spacing: normal;
+    }
+
+    p.px 
+    { 
+        word-spacing: 30px;
+    }
+
+--- example:
+    <css-2.19.1.html>
+
+-!- When a weird spacing is used, and it is necessary to keep the selected paragraph with normal word spacing, the normal option is usually used.
+
+--- example: positive -or- negative value
+
+    p.positive 
+    { 
+        word-spacing: 20px;
+    }
+
+    p.negative 
+    { 
+        word-spacing: -5px;
+    }
+
+--- example:
+    <css-2.19.2.html>
+
+.
+.
+16 - The white-space Property
+
+-- The white-space property specifies how white-space inside an element is handled. 
+-- The values can be set as:
+--- normal  - defines the default style with no extra space between characters
+--- inherit - inherits the property from its parent element;
+--- nowrap  - makes the text continue on the same line until a <br> tag is encountered, 
+              and also collapses all sequences of whitespace into a single whitespace.
+
+-!- The text will continue on the same line until a <br /> tag is encountered.
+
+--- example:
+
+    p 
+    {
+        white-space: nowrap;
+    }
+
+--- example:
+    <css-2.20.1.html>
+
+-- The white-space Values
+
+-- The white-space values can be set as:
+--- pre       - text will only wrap on line breaks and white space
+--- pre-line  - text will wrap where there is a break in code, but extra white space is still ignored
+--- pre-wrap  - text will wrap when necessary, and on line breaks
+
+--- example:
+    p.pre 
+    {
+        white-space: pre;
+    }
+
+    p.preline 
+    {
+        white-space: pre-line;
+    }
+
+    p.prewrap 
+    {
+        white-space: pre-wrap;
+    }
+
+--- example:
+    <css-2.20.2.html>
+
+-!- Pre-wrap value behaves as the pre value, 
+    except that it adds extra line breaks to prevent the text breaking out of the element's box.
+
+.
+.
+17 - css order and priority
+.
+- css order and priority
+1. css body inline (inside tag/s) 
+2. css body style (<style> section)
+3. css external (external css file)
+
+--- example:
+    css file: <css-1.6.css>
+    html file: <css-1.6.html>
+

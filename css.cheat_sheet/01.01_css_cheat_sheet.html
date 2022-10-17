@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://ofekbytes.github.io/assets/icons/ico/y.ico" />
+    <title>CSS #01</title>
+</head>
+
+<body>
+    <div>
+        <h1>CSS -- Cheat-Sheet -- [01-02]</h1>
+        <hr>
+    </div>
+    <br />
+    <div class="container">
+
+        <details>
+            <summary class="setAlign">link - open css file</summary>
+            <div>
+                <hr>
+                <span>link rel="stylesheet" href="style.css"</span>
+                <hr>
+            </div>
+        </details>
+
+
+        <details>
+            <summary class="setAlign">familyfont</summary>
+            <div>
+                <hr>
+                <pre>
+                    <code>
+p.serif {
+    font-family: serif;
+}
+
+p.sansserif {
+    font-family: sans-serif;
+}
+
+p.monospace {
+    font-family: monospace;
+}
+
+p.cursive {
+    font-family: cursive;
+}
+
+p.fantasy {
+    font-family: fantasy;
+}
+                    </code>
+                </pre>
+                <hr>
+            </div>
+        </details>
+
+
+        <details>
+            <summary class="setAlign"> css hierarchy</summary>
+            <div>
+                <hr>
+                <ol>
+                    <li>index.html --> head --> style --> body tag</li>
+                    <li>index.html --> inside body tag as property style</li>
+                    <li>sytle.css --> body tag</li>
+                </ol>
+                <hr>
+            </div>
+        </details>
+
+
+        <details>
+            <summary class="setAlign">selectors tag, class, id</summary>
+            <div>
+                <hr>
+                <ol>
+                    <li>id - uses for a unique tag (overwrite tag and id style) </li>
+                    <li>class - uses for a group of tag (overwrite tag style) </li>
+                    <li>tag </li>
+                </ol>
+                <hr>
+            </div>
+        </details>
+
+        <details>
+            <summary class="setAlign">css pseudo-classes</summary>
+            <div>
+                <hr>
+                <ul>
+                    <li>selector:pseudo-class</li>
+                    <li>a:hover</li>
+                    <li>a:link</li>
+                    <li>a:visited</li>
+                    <li>a:active</li>
+                </ul>
+                <hr>
+            </div>
+        </details>
+
+        <details>
+            <summary class="setAlign">css Pseudo-elements</summary>
+            <div>
+                <hr>
+                <ul>
+                    <li>p::first-letter</li>
+                    <li>p::first-line</li>
+                    <li>h1::before --> something before</li>
+                    <li>h1::after --> something after</li>
+                    <li>::marker --> marker tags: ul/ol/li</li>
+                    <li>::selection --> user selection (do something when user select from screen) /li>
+                </ul>
+                <hr>
+            </div>
+        </details>
+
+        <details>
+            <summary class="setAlign">display</summary>
+            <div>
+                <hr>
+                <ul>
+                    <li>Block</li>
+                    <ul><li>display: block;</li></ul>
+                    <li>Inline</li>
+                    <ul><li>..........</li></ul>
+                    <li>Inline-block</li>
+                    <ul><li>display: inline-block;</li></ul>
+                    <li>None</li>
+                    <ul><li>display: none;</li></ul>
+                    <ul><li>visibility:hidden;</li></ul>
+                </ul>
+            </div>
+            <hr>
+        </details>
+
+        <details>
+            <summary class="setAlign">font</summary>
+            <div>
+                <hr>
+               <ul>
+                <li>Serif - Traditional, Stable, Respectable</li>
+                <ul>
+                    <li>Times New Roman</li>
+                    <li>Georgia</li>
+                    <li>Garamond</li>
+                </ul>
+                <li>Sans-serif - sensible, simple, straightforward</li>
+                <ul>
+                    <li>Arial</li>
+                    <li>Verdana</li>
+                    <li>Helvetica</li>
+                </ul>
+                <li>Cursive</li>
+                <ul>
+                    <li>Brush Script MT</li>
+                    <li>Lucida Handwriting</li>
+                </ul>
+                <li>Fantasy</li>
+                <ul>
+                    <li>Copperplate</li>
+                    <li>Papyrus</li>
+                </ul>
+                <li>read more about</li>
+                <ul>
+                    <li><a href="https://www.w3schools.com/css/css_font.asp">css font</a> </li>
+                </ul>
+               </ul>
+               <hr>
+            </div>
+        </details>
+
+        <details>
+            <summary class="setAlign">font - list</summary>
+            <div>
+                <hr>
+                <ul>
+                    <li>font-family: "Times New Roman", Times, serif;</li>
+                    <li>font-family: Arial, Helvetica, sans-serif;</li>
+                    <li>font-family: "Lucida Console", "Courier New", monospace;</li>
+                    <li></li>
+                </ul>
+                <hr>
+            </div>
+        </details>
+
+        <details>
+            <summary class="setAlign">font - google font list </summary>
+            <div>
+                <hr>
+                <ul>
+                    <li>head - link</li>
+                    <li>body - font</li>
+                    <li>link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"</li>
+                    <li>font-family: "Sofia", sans-serif;</li>
+                    <li>...</li>
+                    <li>link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong"</li>
+                    <li>font-family: "Trirong", serif;</li>
+                    <li>...</li>
+                    <li>link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"</li>
+                    <li>font-family: "Audiowide", sans-serif;</li>
+                    <li>...</li>
+                    <li><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"></li>
+                    <li>font-family: "Audiowide", sans-serif;</li>
+                    <li>font-family: "Sofia", sans-serif;</li>
+                    <li>font-family: "Trirong", serif;</li>
+                    <li>...</li>
+                    <li>link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"</li>
+                    <li>font-family: "Sofia", sans-serif;</li>
+                    <li>font-size: 30px;</li>
+                    <li>text-shadow: 3px 3px 3px #ababab;</li>
+                    <li>...</li>
+                    <li>link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"</li>
+                    <li>font-family: "Sofia", sans-serif;</li>
+                    <li>font-size: 30px;</li>
+                    <li>h1 class="font-effect-fire"</li>
+                    </ul>
+                </ul>
+                <hr>
+            </div>
+        </details>
+
+
+        <details>
+            <summary class="setAlign">font google</summary>
+            <div>
+                <ul>
+                    <li>link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'</li>
+                    <li>font-family: 'Sofia';font-size: 22px;</li>
+                </ul>
+            </div>
+        </details>
+
+        <details>
+            <summary class="setAlign">position</summary>
+            <div>
+                <ul>
+                    <li>static</li>
+                    <li>relative</li>
+                    <li>Absolute</li>
+                    <li>Fixed</li>
+                </ul>
+            </div>
+        </details>
+
+        <details>
+            <summary class="setAlign">template</summary>
+            <div>
+                <!-- data -->
+            </div>
+        </details>
+
+        <details>
+            <summary class="setAlign">template</summary>
+            <div>
+                <!-- data -->
+            </div>
+        </details>
+
+        <details>
+            <summary class="setAlign">template</summary>
+            <div>
+                <!-- data -->
+            </div>
+        </details>
+
+    </div>
+</body>
+
+</html>

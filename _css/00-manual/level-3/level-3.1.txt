@@ -1,0 +1,679 @@
+.
+.
+css - Properties.
+.
+.
+- level 3.01 - The CSS Box Model
+- level 3.02 - More on Box Models
+- level 3.03 - The border Property
+- level 3.04 - CSS Width and Height
+- level 3.05 - The background-color Property
+- level 3.06 - The background-image Property  
+- level 3.07 - The background-repeat Property
+- level 3.08 - The background-attachment Property
+- level 3.09 - The list-style-type Property
+- level 3.10 - The Table Properties
+- level 3.11 - Setting Styles to Links
+- level 3.12 - Setting the Mouse Cursor Style
+
+
+.
+.
+- level 3.01 - The CSS Box Model
+.
+
+- All HTML elements can be considered as boxes. 
+  The CSS box model represents the design and layout of the site. 
+  It consists of margins, borders, paddings, and the actual content. 
+
+-- The properties work in the same order: top, right, bottom, and left. 
+
+--- example: illustrates the box model (image)
+    <css-03-01.png>
+
+-!- The term "box model" is used when talking about design and layout
+
+.
+.
+- level 3.02 - More on Box Models
+.
+
+-- Every element of the webpage is a box. 
+
+-- CSS uses the box model to determine how big the boxes are and how to place them.
+
+-!- The box model is also used to calculate the actual width and height of the HTML elements.
+
+
+- Total Width of an Element:
+-- When working with boxes, it is important to understand how the total width of an element is calculated. 
+
+--- example: the total width of the box with paddings will be the sum of width plus padding left and padding right.
+    <css-03-02.png>
+
+--- example: another box with margins, border, and paddings. 
+    The total width is the sum of left and right margins, 
+    left and right borders, left and right paddings, and the actual width of the content.
+    <css-03-03.png>
+
+-!- When you set the width and height properties of an element with CSS, you set the width and height of the content area.
+    When setting a background-color to a box, it covers the content area, as well as the padding.
+
+
+- Total Height of an Element
+--- example: The total height of an element (box). 
+    The Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+    <css-03-04.png>   
+
+.
+.
+- level 3.03 - The border Property
+.
+
+-- The CSS border property customize the borders of HTML elements.
+   add a border to the element: size, style, color of the border. 
+
+--- example: paragraph solid green border.
+
+    p 
+    {
+        padding: 10px;    
+        border: 5px solid green;
+    }
+
+--- example: border Propert
+    <css-3.01.1.html>
+
+
+-- Border Width - the width of the border.
+
+    p.first 
+    {
+        padding: 10px;    
+        border-style: solid;
+        border-width: 2px;
+    }
+
+    p.second 
+    {
+        padding: 10px;    
+        border-style: solid;
+        border-width: 5px;
+    }
+
+
+-- Border Color - the Border Color using a color name, RGB, Hex values
+
+--- example: border Color
+    <css-3.01.2.html>
+
+-!- None of the border properties will have any effect unless the border-style property is set.
+
+
+-- The border-style Property - the border-style property: dotted, dashed, double, etc. 
+
+    p.none {border-style: none;}
+    p.dotted {border-style: dotted;}
+    p.dashed {border-style: dashed;}
+    p.double {border-style: double;}
+    p.groove {border-style: groove;}
+    p.ridge {border-style: ridge;}
+    p.inset {border-style: inset;}
+    p.outset {border-style: outset;}
+    p.hidden {border-style: hidden;}
+
+--- example: border Color
+    <css-3.01.3.html>
+
+-!- None of the border-style will have any effect unless the border-style property is set (no border).
+
+-!- In CSS, it is possible to specify different borders for different sides, 
+    using the following properties: border-top-style, border-right-style, border-bottom-style, and border-left-style for the corresponding sides.
+
+.
+.
+- level 3.04 - CSS Width and Height
+.
+
+-- To style a <div> element to have a total width and height of 100px:
+
+--- example: border Color
+
+    div 
+    {
+        border: 5px solid green;    
+        width: 110px;
+        height: 110px;
+    }
+
+--- example: CSS Width and Height
+    <css-3.02.1.html>
+
+-!- The total width and height of the box will be the 110px+5px (border)+5px(border) = 120px;
+
+--- example: The width of an element is assigned in percentages, the height in pixels. 
+    <css-3.02.2.html>
+
+--- example: The width of an element is assigned in percentages, the height in pixels. 
+    <css-3.02.3.html>
+    
+
+-- The Minimum and Maximum Sizes
+
+-- To set the minimum and maximum height and width of an element, 
+   you can use the following properties:
+
+--- min-width   - the minimum width of an element
+--- min-height  - the minimum height of an element
+--- max-width   - the maximum width of an element
+--- max-height  - the maximum height of an element
+
+--- example: we set the minimum height and maximum width of different paragraphs to 100px. 
+
+    p.first 
+    {
+        border: 5px solid green;    
+        min-height: 100px;       
+    }
+
+    p.second 
+    {
+        border: 5px solid green;    
+        max-width: 100px;       
+    }
+
+.
+.
+- level 3.05 - The background-color Property
+.
+
+--- example:
+
+    body 
+    {
+        background-color: #87CEFA;
+    }
+
+--- example:
+    <css-3.03.1.html>    
+
+
+-- The Background Color Values
+
+--- The color of the background can be defined using three different formats:
+    a color name, hexadecimal values, and RGB. 
+
+--- example:
+
+    body 
+    {
+        background-color: #C0C0C0;
+    }
+
+    h1 
+    {
+        background-color: rgb(135,206,235);
+    }
+
+    p 
+    {
+        background-color: LightGreen;
+    }
+
+--- example:
+    <css-3.03.2.html> 
+
+.
+.
+- level 3.06 - The background-image Property  
+.
+
+-- The background-image property sets one or several background images in an element. 
+
+--- example: background-image for the <body> element.
+
+    body 
+    {
+        background-image: url("css_logo.png");
+        background-color: #e9e9e9;
+    }
+
+-- The url specifies the path to the image file. 
+   Both relative and absolute paths are supported.
+
+-- By default, a background-image is placed at the top-left corner of an element, 
+   and is repeated both vertically and horizontally to cover the entire element.
+
+--- example: The background-image Property (url("pix/weave1.png"))
+    <css-3.04.1.html> 
+
+
+--- example: The background-image Property inside <p> element
+
+p {
+   padding: 30px;
+   background-image: url("green_photo.jpg");
+   color: white;   
+}
+
+--- example: The background-image Property inside <p> element
+    <css-3.04.2.html> 
+
+--- example: The background-image Property inside <p> element (x2 images)
+    <css-3.04.3.html> 
+
+
+-!- To specify more than one image, just separate the URLs with commas.
+
+.
+.
+- level 3.07 - The background-repeat Property
+.
+
+-- The background repeat property specifies how background images are repeated. 
+   A background image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all. 
+
+   repeat-x   -  horizontal repeated
+   repeat-y   -  vertical repeated
+   no-repeat  -  once (x1) repeated
+
+
+--- example: repeat-x - horizontal
+
+    body 
+    {
+        background-image: url("css_logo.png");
+        background-repeat: repeat-x;  
+    }
+
+--- example: repeat-x
+    <css-3.05.1.html>
+
+--- example: repeat-y - vertical repeated
+
+    body 
+    {
+        background-image: url("css_logo.png");
+        background-repeat: repeat-y;
+    }
+
+--- example: repeat-y
+    <css-3.05.2.html>
+
+-- Setting the Value to Inherit
+   when you set the background-repeat property to inherit, 
+   it will take the same specified value as the property for the element's parent. 
+
+--- example: we set the body background repeat only horizontally. 
+             If we set some paragraph background-repeat values to be inherited, 
+             they will take the same property value as the body element.
+
+
+--- example: "body" tag background-repeat is "repeat-x", "p" tag inherit "body" tag.
+
+    body 
+    {
+        background-image: url("css_logo.png");
+        background-repeat: repeat-x;
+    }
+    
+    p 
+    {
+        background-image: url("css_logo.png");
+        background-repeat: inherit;
+        margin-top: 100px;
+        padding: 40px;
+    }
+
+--- example: inherit : "body" tag background-repeat is "repeat-x", "p" tag inherit "body" tag.
+    <css-3.05.3.html> 
+
+.
+.
+- level 3.08 - The background-attachment Property
+.
+
+--  The background-attachment property sets whether a background image is fixed or scrolls with the rest of the page.
+    Even if an element has a scrolling mechanism, a "fixed" background doesn't move with the element.
+
+--- example: background-attachment "fixed" / "scrolls"
+    background-attachment: fixed;
+    background-attachment: scrolls;
+
+--- example: "body" tag background-repeat is "repeat-x", "p" tag inherit "body" tag.
+
+--- example: background-attachment "fixed"
+
+    body 
+    {
+        background-image: url("css_logo.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+--- example: background-attachment "fixed"
+    <css-3.06.1.html> 
+
+
+-- The background-attachment Values: "inherit", "scroll".
+---  "inherit" value - is inherit the value from its parent element. 
+---  "scroll" value - the background image will scroll with the rest of the content.
+
+--- example:
+
+    body 
+    {
+        background-image: url("css_logo.png");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+
+--- example: background-attachment "scroll"
+    <css-3.06.2.html> 
+
+.
+.
+- level 3.09 - The list-style-type Property
+.
+
+--  The CSS list properties allow us to set different list item markers. 
+    In HTML, there are two types of lists:
+    unordered lists (<ul>) - the list items are marked with bullets
+    ordered lists (<ol>) - the list items are marked with numbers or letters
+    With CSS, lists can be styled further, and images can be used as the list item marker.
+    List-style-type property values: circle, square, decimal, disc, lower-alpha, etc. 
+
+--- example:
+
+    ol.lower-alpha 
+    {
+        list-style-type: lower-alpha;
+    }
+
+    ol.upper-alpha 
+    {
+        list-style-type: upper-alpha;
+    }
+
+    ol.disc 
+    {
+        list-style-type: disc;
+    }
+
+
+    ul.circle 
+    {
+        list-style-type: circle;
+    }
+
+    ul.square 
+    {
+        list-style-type: square;
+    }
+
+--- example: The list-style-type Property
+    <css-3.07.1.html> 
+
+
+
+-- The List Image and Position: 
+--- list-style-image - specifies an image to be used as the list item marker.
+--- list-style-position - specifies the position of the marker box: inside, outside (default).
+
+--- example: using an "image" as the list item marker, and specify the "position" to be "inside" of the content flow. 
+
+    ul 
+    {
+        list-style-image: url("logo.jpg");
+        list-style-position: inside;
+    }
+
+--- example: The List Image and Position
+    <css-3.07.2.html> 
+
+
+
+-- The list-style Property:
+
+--- list-style property set the "list-style-type", "list-style-image", "list-style-position" in one declaration:
+
+--- example: list-style property set (shorthand version)
+
+    ul 
+    {
+        list-style: square outside none;
+    }
+
+
+--- example: longhand version
+
+    ul 
+    {
+        list-style-type: square;
+        list-style-position: outside;
+        list-style-image: none;
+    }
+
+--- example: list-style property set (shorthand version)
+    <css-3.07.3.html> 
+
+
+-!- If one of the property values are missing, the default value for the missing property will be inserted, if any.
+
+.
+.
+- level 3.10 - The Table Properties
+.
+
+--  The border-collapse property specifies whether the table borders are collapsed into a single border or separated as default.
+    If the borders are separate, the border-spacing property can be used to change the spacing. 
+
+--- example: border-collapse property
+
+    table 
+    {
+        border-collapse: separate;
+        border-spacing: 20px 40px;
+    }
+
+--- example: css - The Table Properties 
+    <css-3.08.1.html>
+
+
+
+-- The "caption-side" Property
+
+--- The "caption-side" property specifies the position of a table caption. 
+    The values set: "top" or "bottom". 
+
+--- example: caption-side
+
+    <style>
+        caption {
+            caption-side: top;
+            /*caption-side:bottom;*/
+            /*Title down*/
+        }
+    </style>
+
+--- example: caption-side "top"
+    <css-3.08.2.html>
+
+--- example: caption-side "bottom"
+    <css-3.08.3.html>
+
+
+
+-- The "empty-cells" Property
+
+--- The empty-cells property specifies whether or not to display borders and background on empty cells in a table. 
+--- values are: show -or- hide 
+
+--- example: The empty-cells Property - hide
+    table 
+    {
+        border-collapse: separate;
+        empty-cells: hide;
+    }
+
+--- example: The empty-cells Property - hide
+    <css-3.08.4.html>
+
+
+--- example: The empty-cells Property - show 
+    table 
+    {
+        border-collapse: separate;
+        empty-cells: show;
+    }  
+
+--- example: The empty-cells Property - show
+    <css-3.08.5.html>
+
+
+-- The table-layout Property
+
+--- The table-layout specifies how the width of table columns is calculated. 
+    The possible values are: "auto" -or- "fixed"
+    auto - when column or cell width are not explicitly set, the column width will be in proportion to the amount of content in the cells that make up the column
+    fixed - when column or cell width are not explicitly set, the column width will not be affected by the amount of content in the cells that make up the column.
+
+--- example: The table-layout Property - auto & fixed
+
+    table 
+    {
+        border-collapse: separate;
+        width: 100%;
+        border: 1px solid gray;
+    } 
+
+    td 
+    {
+        border: 1px solid gray;
+    }
+
+    table.auto 
+    {
+        table-layout: auto;
+    }
+
+    table.fixed 
+    {
+        table-layout: fixed;
+    }
+
+--- example: The table-layout Property - auto & fixed
+    <css-3.08.6.html>
+
+.
+.
+- level 3.11 - Setting Styles to Links
+.
+
+--  Links can be styled with any CSS property (e.g., color, font-family, background, etc.).
+    pseudo selectors are available:
+
+    a:link      - defines the style for normal unvisited links
+    a:visited   - defines the style for visited links
+    a:active    - a link becomes active once you click on it
+    a:hover     - a link is hovered when the mouse is over it
+
+The example below creates a link that will change the style when the mouse is moved over it.
+
+--- example: link will change the style when the mouse is moved over it.
+    a:hover 
+    {
+        color: red;
+    }
+
+--- example: link will change the style when the mouse is moved over it.
+    <css-3.09.1.html>
+
+
+-- order rules:
+    a:link     //#1
+    a:visited  //#1
+    a:hover    //#2
+    a:active   //#3
+
+
+--- example: link will change the style when the mouse is moved over it  - without underline 
+
+    a:link 
+    {
+        text-decoration: none;
+    }
+
+    a:hover 
+    {
+        color: red;
+    }
+
+
+--- example: link will change the style when the mouse is moved over it  - without underline 
+    <css-3.09.2.html>
+
+-!- properties used to control the look and feel of links:
+---- border:none   - removes border from images with links
+---- outline:none  - removes the dotted border on clicked lines in IE
+
+--- example: images border:none, click outline:none
+    <css-3.09.3.html>
+
+
+--- example: text-decoration
+    <css-3.09.4.html>
+
+.
+.
+- level 3.12 - Setting the Mouse Cursor Style
+.
+
+--  set your desired cursor style when you mouse over an element. 
+
+--- example: set icon "help":
+
+    <span style="cursor:help;">
+        Do you need help?
+    </span>
+
+
+--- example: set icon "help":
+
+    .qmc:hover 
+    {
+        color: blue;
+        cursor: help;
+    }
+
+
+--- example: set icon "help":
+    <css-3.10.1.html>
+
+
+-- The cursor Property Values
+
+default - default cursor
+crosshair - cursor displays as crosshair
+pointer - cursor displays hand icon
+The list of possible values is quite long. 
+The image below demonstrates the various available 
+
+auto, crosshair, default, move, help, text, wait,
+n-resize, s-resize, ne-resize, sw-resize, 
+nw-resize, se-resize, e-resize, w-resize, 
+pointer, progress, not-allowed, no-drop,
+vertical-text, all-scroll, col-resize, row-resize,
+
+
+
+-!- The default Value - 
+
+Usually, the appearance of the mouse cursor is altered to provide a more 
+interesting experience for website visitors.
+
+
+
+text-decoration:none;
+
+

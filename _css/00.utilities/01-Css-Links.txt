@@ -1,0 +1,280 @@
+
+/***** css links *****/
+
+---[sorted]---
+
+// 002.
+// 
+// CSS  - mdn web doc
+https://developer.mozilla.org/en-US/
+// enter the site
+// [menu-bar] --> [technologies] --> [CSS]
+// in the page link --> [CSS Reference]
+//
+// CSS - Reference - 
+// CSS reference to browse an alphabetical index of all the standard CSS properties
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+// CSS - Reference - background
+https://developer.mozilla.org/en-US/docs/Web/CSS/background
+
+// CSS - Reference - background-color
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-color
+//
+//
+
+-- [RTFM] - css - image ,display: inline-block; , 
+https://stackoverflow.com/questions/2402761/is-img-element-block-level-or-inline-level
+
+
+/* icons */
+https://www.w3schools.com/icons/default.asp
+
+/* flat icon */
+https://www.flaticon.com
+
+/* favicon - create icon online editor */
+https://www.favicon.cc/
+
+
+/* Emojipedia */
+
+// home page 
+https://emojipedia.org
+
+// broccoli
+https://emojipedia.org/broccoli/
+
+// image url
+https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/198/broccoli_1f966.png
+
+
+/* animated gif */
+https://giphy.com
+
+/*Short Link*/ Short Link
+https://gph.is/st/mDgxpzY
+https://gph.is/st/MwrJa0E
+https://gph.is/st/YK0KpXm
+
+/*GIF Link*/
+https://media.giphy.com/media/ksE9feSa2b4V2GYwY4/giphy.gif
+https://media.giphy.com/media/H7AmqyARFEc7S1Smtl/giphy.gif
+https://media.giphy.com/media/8PmTxEQhXWdNxGPLht/giphy.gif
+
+/*HTML5 Video*/
+https://giphy.com/gifs/ksE9feSa2b4V2GYwY4/html5
+https://giphy.com/gifs/H7AmqyARFEc7S1Smtl/html5
+https://giphy.com/gifs/8PmTxEQhXWdNxGPLht/html5
+
+
+/* picture */
+
+/***********/
+
+
+
+
+/* TODO cp to gen links */
+/* chrome debug tool - for web building (html, css....) */
+/* press "pesticide" icon in the chrome browser */
+/* press "ctrl" + hover the mouse pointer over an element to view the element information */
+https://www.heroku.com/
+
+
+/* seanhalpin - css nice site example */
+http://seanhalpin.io/
+
+/* colorhunt - color picker examples */
+https://colorhunt.co/
+
+
+/* basic css model demo */
+http://markusvogl.com/web1/interactive_box_model/css_box_demo.html
+
+
+/* color */
+https://www.w3schools.com/colors/default.asp
+
+https://www.w3schools.com/colors/colors_psychology.asp
+
+https://encycolorpedia.com/8e1e1d
+
+/* color wheel */
+https://www.w3schools.com/colors/colors_wheels.asp
+
+
+
+/* website example */
+https://visme.co/blog/website-color-schemes/
+
+
+/* font rtfm */
+
+/***** font-family *****/
+
+https://en.wikipedia.org/wiki/Serif
+
+https://en.wikipedia.org/wiki/Sans-serif
+
+https://en.wikipedia.org/wiki/List_of_sans_serif_typefaces
+
+/*****************************************************************/
+
+/* css box properties */
+
+
+/***** font / font-family *****/
+
+/* free fonts */
+https://www.1001freefonts.com/western-fonts.php
+
+/* css_websafe_fonts */ 
+https://www.w3schools.com/cssref/css_websafe_fonts.asp
+
+/* css font stack */
+https://www.cssfontstack.com/
+
+/* google fonts */
+https://fonts.google.com
+
+
+/* merriweather */
+https://fonts.google.com/?query=merriweather&selection.family=Merriweather
+
+<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+
+font-family: 'Merriweather', serif;
+
+
+/* sacramento */
+<link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+
+font-family: 'Sacramento', cursive;
+
+
+/* Montserrat */
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+font-family: 'Montserrat', sans-serif;
+
+
+/********** font example: /merriweather/Montserrat/sacramento/ **********/
+<head>
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sacramento', cursive;
+    font-family: 'Merriweather', serif;
+</style>
+/******************************/
+
+
+/* design portfolio talent site */
+https://medium.com/@tristaljing/top-10-free-online-portfolio-websites-to-create-perfect-ux-ui-design-portfolios-7d99888ab9
+
+https://css-tricks.com/guides/web-components/
+
+
+/***** test-page / loremipsum *****/
+http://loremipsumgenerator.com
+
+http://lorem-ipsum.perbang.dk/
+
+
+/***** css button generator *****/
+
+/* create css button */
+https://cssbuttoncreator.com/
+
+/* create css button */
+https://www.bestcssbuttongenerator.com
+
+/* create css button -or- images (.png) */
+https://loading.io/button/generator/
+
+/* create css button -or- images (.png) + icon */
+http://buttonoptimizer.com/
+
+
+/* create css3 button */
+https://www.cssgenerators.net/
+
+/* create css3 button */
+http://css3button.net/
+
+
+/* create css3 button -*-  */
+https://dabuttonfactory.com/
+
+/* create css3 button -*-  */
+http://www.cssbuttongenerator.com
+
+/* create css3 button -*-  */
+https://css-tricks.com/examples/ButtonMaker/
+
+/* css  challenge */
+https://www.frontendmentor.io
+https://www.frontendmentor.io/challenges
+
+
+
+/********************************/
+---[temp links]---
+https://www.appbrewery.co/p/web-development-course-resources/
+
+
+---[unsorted]---
+
+/* mozilla */********************************/
+https://developer.mozilla.org/en-US/docs/Learn
+
+
+/* css default value */
+https://www.w3schools.com/cssref/css_default_values.asp
+
+
+<!--  ===[ css - display ]===   -->
+<!-- The display CSS property sets whether an element is treated as a block or inline element -->
+<!-- and the layout used for its children, such as grid or flex. --> 
+https://developer.mozilla.org/en-US/docs/Web/CSS/display
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inline_Layout_in_Normal_Flow
+
+
+<!-- ===[ css - Reference ]=== -->
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+css color-list
+https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+
+https://www.w3schools.com/cssref/default.asp
+
+
+
+https://www.quackit.com/css/css_cellspacing.cfm
+
+https://www.quackit.com/css/tutorial/
+
+/* css default value */
+https://www.w3schools.com/cssref/css_default_values.asp
+
+
+//// todo /// check links //
+
+
+
+css example links
+
+https://www.w3schools.com/css/css_rwd_intro.asp
+
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+https://www.w3schools.com/w3css/w3css_responsive.asp
+
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_responsive_half&stacked=h
+
+
