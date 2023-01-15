@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div box</title>
+
+    <style>
+        .testimonial {
+            background: hsl(0 0% 50% / 0.25);
+            padding: 2rem;
+            margin: 2rem;
+            position: relative;
+        }
+
+        .testimonial::before {
+            /* content: 'testimonial::before text'; */
+            /* content: ''; */
+            /* content: open-quote; */
+            position: absolute;
+            inset: 0;
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="testimonials">
+
+            <div class="testimonial">
+                <p>This is 01</p>
+            </div>
+
+            <div class="testimonial">
+                <p>This is 02</p>
+            </div>
+
+            <div class="testimonial">
+                <p>This is 03</p>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
