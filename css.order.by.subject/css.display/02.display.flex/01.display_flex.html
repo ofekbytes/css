@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display flex</title>
+    <style>
+        .nav {
+            display: flex;
+            /* Enable flex layout */
+            justify-content: space-between;
+            /* Spread items evenly across the main axis */
+            align-items: center;
+            /* Center items along the cross axis */
+            padding: 10px;
+            /* Add some padding */
+            background-color: #333;
+            /* Set the background color */
+            color: #fff;
+            /* Set the text color */
+        }
+
+        .nav a {
+            color: #fff;
+            /* Set the link color */
+            text-decoration: none;
+            /* Remove underline */
+            margin-left: 10px;
+            /* Add margin between links */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</body>
+
+</html>

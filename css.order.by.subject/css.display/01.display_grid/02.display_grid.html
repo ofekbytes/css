@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display grid</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* Three equal columns */
+            grid-template-rows: 200px 100px;
+            /* Two rows */
+            grid-gap: 10px;
+            /* Gap between cells */
+        }
+
+        .grid>div {
+            background-color: #ddd;
+            /* Background color for cells */
+        }
+    </style>
+</head>
+
+<body>
+
+    /* Example usage */
+    <div class="grid">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+    </div>
+
+    <!-- This creates a grid with three equal columns and two rows. The grid-gap property creates a 10px gap between cells,
+    and the grid > div selector sets a gray background color for each cell. The grid class can then be applied to a
+    container element, and its child elements will be placed in the grid according to the layout defined by the CSS. -->
+    
+</body>
+
+</html>

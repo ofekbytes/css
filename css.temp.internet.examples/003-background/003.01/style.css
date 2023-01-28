@@ -32,7 +32,7 @@
    }
  }
  body div:nth-child(1) {
-   --current: #8ecae6;
+   --current: red;  /* #8ecae6;*/
  }
  body div:nth-child(2) {
    --current: #7cc3df;
