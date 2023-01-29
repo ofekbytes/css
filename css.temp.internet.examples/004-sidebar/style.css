@@ -1,0 +1,33 @@
+body {
+    /* display side by side */
+    display: flex;
+}
+
+.box {
+    background-color: rebeccapurple;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.sidebar {
+    width: 30%;
+    border-left: 1px solid black;
+}
+
+.main, 
+.sidebar {
+    container-type: inline-size;
+}
+
+/* @media (100px <= width <= 200px) { */
+/* @media (width >= 600px) { */
+@container (width >= 600px) {
+    .box {
+        background: red;
+    }
+}

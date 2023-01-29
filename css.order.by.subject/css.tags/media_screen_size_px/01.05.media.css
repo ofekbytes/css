@@ -1,0 +1,18 @@
+.box {
+    background-color: rebeccapurple;
+    width: 220px;
+    height: 220px;
+}
+
+/* min-width: >= 150px */
+/* @media (width >= 150px) { */
+
+/* min-width: <= 150px */
+/* @media (width <= 150px) { */
+
+/* between: 100px - 200px */
+@media (100px <= width <= 200px) {
+    .box {
+        background: red;
+    }
+}

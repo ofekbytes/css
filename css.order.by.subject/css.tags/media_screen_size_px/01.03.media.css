@@ -1,0 +1,15 @@
+.box {
+    background-color: rebeccapurple;
+    width: 220px;
+    height: 220px;
+}
+
+/* size: width > height */
+/* @media (orientation: landscape) { */
+
+/* size: height > width */
+@media (orientation: portrait) {
+    .box {
+        background: red;
+    }
+}

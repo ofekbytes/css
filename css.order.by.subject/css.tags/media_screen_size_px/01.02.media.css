@@ -1,0 +1,18 @@
+.box {
+    background-color: rebeccapurple;
+    width: 220px;
+    height: 220px;
+}
+
+/* < 300px */
+/* @media (max-width: 300px) {  */
+
+/* > 300px */
+/* @media (min-width: 300px) { */
+
+/* > 500 */
+@media (min-width: 500px) {
+    .box {
+        background: red;
+    }
+}

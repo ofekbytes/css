@@ -1,0 +1,20 @@
+/* 
+[TODO]
+    Test variable - ????
+*/
+
+
+.box {
+    background-color: rebeccapurple;
+    width: 220px;
+    height: 220px;
+}
+
+/* media variable */
+@custom-media --size_one (width >= 150px);
+
+@media (--size_one) {
+    .box {
+        background: red;
+    }
+}

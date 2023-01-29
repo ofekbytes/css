@@ -1,0 +1,48 @@
+
+.box {
+    background-color: rebeccapurple;
+    width: 220px;
+    height: 220px;
+}
+
+
+/* < 300px */
+/* @media (max-width: 300px) {  */
+
+/* > 300px */
+/* @media (min-width: 300px) { */
+
+/* > 500 */
+/* @media (min-width: 500px) { */
+
+/* size: width > height */
+/* @media (orientation: landscape) { */
+
+/* size: height > width */
+/* @media (orientation: portrait) { */
+
+/* size: width > height */
+/* @media (min-aspect-ratio: 1 / 1) { */
+
+/* size: width > height */
+/* @media (min-aspect-ratio: 2 / 1) { */
+
+/* size: width > height */
+/* @media (min-aspect-ratio: 1 / 2) { */
+
+/* min-width: >= 150px */
+/* @media (width >= 150px) { */
+
+/* min-width: <= 150px */
+/* @media (width <= 150px) { */
+
+/* between: 100px - 200px */
+/* @media (100px <= width <= 200px) { */
+
+/* media variable */
+@custom-media --size_one (width : 200px);
+@media (--size_one) {
+    .box {
+        background: red;
+    }
+}
